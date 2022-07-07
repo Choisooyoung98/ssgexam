@@ -12,7 +12,7 @@ public class App {
 
         outer:
         while(true) {
-            System.out.println("명령) ");
+            System.out.printf("명령) ");
             String cmd = sc.nextLine().trim();
 
             switch ( cmd ) {
@@ -26,7 +26,7 @@ public class App {
                     String author = sc.nextLine().trim();
                     WiseSaying wiseSaying = new WiseSaying(id, content, author);
                     System.out.println(id + "번째 명언이 등록되었습니다.");
-                    continue;
+                    System.out.println(wiseSaying);
             }
         }
 
